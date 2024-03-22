@@ -1,0 +1,31 @@
+!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Face recognition App</title>
+    <link rel="stylesheet" href="/CSS/style.css" />
+  </head>
+  <body>
+    <header>Face recognition in the browser using Javascript</header>
+    <div class="container">
+      <video id="video" height="500" width="500" autoplay muted></video>
+    </div>
+    <canvas id="canvas"></canvas>
+    <audio id="musicPlayer" controls>
+        <source src="your-music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <button id="playButton">Play</button>
+    <button id="pauseButton">Pause</button>
+    <div class="result-container">
+      <div id="emotion">Emotion</div>
+      <div id="gender">Gender</div>
+      <div id="age">Age</div>
+    </div>
+
+    <script src="./js/face-api.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
